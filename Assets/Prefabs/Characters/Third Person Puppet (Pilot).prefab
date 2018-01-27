@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4585907153863876}
   m_Layer: 9
-  m_Name: Third Person Puppet
+  m_Name: Third Person Puppet (Pilot)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
