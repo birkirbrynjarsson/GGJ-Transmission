@@ -13,7 +13,7 @@ namespace RootMotion.Demos {
 		protected override void Update () {
 			base.Update();
 
-			state.actionIndex = Input.GetKey(hitKey)? 1: 0;
+			state.actionIndex = player.GetButton("Punch")? 1: 0;
 		}
 	}
 }

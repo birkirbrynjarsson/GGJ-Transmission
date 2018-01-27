@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using RootMotion.Dynamics;
+//using RootMotion.Demos;
 
 namespace RootMotion.Demos {
 
@@ -90,7 +91,7 @@ namespace RootMotion.Demos {
 			if (!grabbed) return;
 
 			// Releasing the other puppet, restoring the initial state
-			if (Input.GetKeyDown(KeyCode.X)) {
+			if (UserControlThirdPerson.player.GetButtonDown("Grab")) {
 				Destroy(joint);
 				r.mass /= massMlp;
 				puppetMaster.solverIterationCount /= solverIterationMlp;
