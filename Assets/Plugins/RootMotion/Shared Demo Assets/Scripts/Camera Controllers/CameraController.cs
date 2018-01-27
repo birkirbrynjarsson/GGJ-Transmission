@@ -18,6 +18,7 @@ namespace RootMotion {
 			FixedLateUpdate
 		}
 
+		public UserControlThirdPerson userController;
 		public Transform target; // The target Transform to follow
 		public Transform rotationSpace; // If assigned, will use this Transform's rotation as the rotation space instead of the world space. Useful with spherical planets.
 		public UpdateMode updateMode = UpdateMode.LateUpdate; // When to update the camera?
@@ -112,10 +113,10 @@ namespace RootMotion {
 			bool rotate = rotateAlways || (rotateOnLeftButton && Input.GetMouseButton(0)) || (rotateOnRightButton && Input.GetMouseButton(1)) || (rotateOnMiddleButton && Input.GetMouseButton(2));
 
 			// delta rotation
-			/* if (rotate) {
-				x += UserControlThirdPerson.player.GetAxis("Look Horizontal") * rotationSensitivity;
-				y = ClampAngle(y - UserControlThirdPerson.player.GetAxis("Look Vertical") * rotationSensitivity, yMinLimit, yMaxLimit);
-			}*/ 
+			if (rotate) {
+				x += userController.player.GetAxis("Look Horizontal") * rotationSensitivity;
+				y = ClampAngle(y - userController.player.GetAxis("Look Vertical") * rotationSensitivity, yMinLimit, yMaxLimit);
+			}
 
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);

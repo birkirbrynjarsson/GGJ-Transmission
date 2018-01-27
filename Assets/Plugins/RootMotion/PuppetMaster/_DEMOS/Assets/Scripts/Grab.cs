@@ -34,10 +34,21 @@ namespace RootMotion.Demos {
 		}
 
 		void OnCollisionEnter(Collision collision) {
+			
 			if (grabbed) return; // If we have not grabbed anything yet...
+			if (!userControl.player.GetButton("Grab")) return; // If we are pressing the grab button...
 			if (Time.time < nextGrabTime) return; // ...and enough time has passed since the last release...
 			if (collision.gameObject.layer != grabLayer) return; // ...and the collider is on the right layer...
 			if (collision.rigidbody == null) return; // ...and it has a rigidbody attached.
+
+			// Return if we are being held ourselves
+			foreach (BehaviourBase b in puppetMaster.behaviours) {
+				if (b is BehaviourPuppet) {
+					if (!(b as BehaviourPuppet).canGetUp) {
+						return;
+					}
+				}
+			}
 
 			// Find MuscleCollisionBroadcaster that is a component added to all muscles by the PM, it broadcasts collisions events to PM and its behaviours.
 			var m = collision.gameObject.GetComponent<MuscleCollisionBroadcaster>();
