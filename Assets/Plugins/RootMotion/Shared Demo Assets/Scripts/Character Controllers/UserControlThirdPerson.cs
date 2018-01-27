@@ -19,7 +19,7 @@ namespace RootMotion.Demos {
 		}
 
 		public int rewiredPlayerId = 0;		// The Rewired player Id for this character
-		public static Player player; 		// The Rewired player
+		public Player player; 		// The Rewired player
 		public bool walkByDefault;        // toggle for walking state
 		public bool canCrouch = true;
 		public bool canJump = true;
@@ -37,6 +37,8 @@ namespace RootMotion.Demos {
 		}
 
 		protected virtual void Update () {
+
+			print (player.id);
 			// read inputs
 			state.crouch = canCrouch && player.GetButton("Crouch");
 			state.jump = canJump && player.GetButton("Jump");

@@ -112,10 +112,10 @@ namespace RootMotion {
 			bool rotate = rotateAlways || (rotateOnLeftButton && Input.GetMouseButton(0)) || (rotateOnRightButton && Input.GetMouseButton(1)) || (rotateOnMiddleButton && Input.GetMouseButton(2));
 
 			// delta rotation
-			if (rotate) {
+			/* if (rotate) {
 				x += UserControlThirdPerson.player.GetAxis("Look Horizontal") * rotationSensitivity;
 				y = ClampAngle(y - UserControlThirdPerson.player.GetAxis("Look Vertical") * rotationSensitivity, yMinLimit, yMaxLimit);
-			}
+			}*/ 
 
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);

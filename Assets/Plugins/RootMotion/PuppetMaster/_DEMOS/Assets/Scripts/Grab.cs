@@ -91,7 +91,7 @@ namespace RootMotion.Demos {
 			if (!grabbed) return;
 
 			// Releasing the other puppet, restoring the initial state
-			if (UserControlThirdPerson.player.GetButtonDown("Grab")) {
+			if (userControl.player.GetButtonDown("Grab")) {
 				Destroy(joint);
 				r.mass /= massMlp;
 				puppetMaster.solverIterationCount /= solverIterationMlp;

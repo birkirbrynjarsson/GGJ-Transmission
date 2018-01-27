@@ -109,14 +109,9 @@ namespace RootMotion {
 			Cursor.lockState = lockCursor? CursorLockMode.Locked: CursorLockMode.None;
 			Cursor.visible = lockCursor? false: true;
 
-			// Should we rotate the camera?
-			bool rotate = rotateAlways || (rotateOnLeftButton && Input.GetMouseButton(0)) || (rotateOnRightButton && Input.GetMouseButton(1)) || (rotateOnMiddleButton && Input.GetMouseButton(2));
-
-			// delta rotation
-			if (rotate) {
-				x += UserControlThirdPerson.player.GetAxis("Look Horizontal") * rotationSensitivity;
-				y = ClampAngle(y - UserControlThirdPerson.player.GetAxis("Look Vertical") * rotationSensitivity, yMinLimit, yMaxLimit);
-			}
+			// Rotate
+			// x += UserControlThirdPerson.player.GetAxis ("Look Horizontal") * rotationSensitivity;
+			y = ClampAngle (y - (-20) * rotationSensitivity, yMinLimit, yMaxLimit);
 
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);
@@ -166,11 +161,9 @@ namespace RootMotion {
 
 				// Distance between players if 2 players.
 				if (target2 != null) {
-					float z = Mathf.Abs (target.position.z - target2.position.z);
-					float x = Mathf.Abs (target.position.z - target2.position.z);
-					print ("z: " + z + " x: " + x);
-					addDistance = z < x ? x : z;
-					print ("distance: " + addDistance);
+					float zDis = Mathf.Abs (target.position.z - target2.position.z);
+					float xDis = Mathf.Abs (target.position.x - target2.position.x);
+					addDistance = Mathf.Sqrt (Mathf.Pow (zDis, 2) + Mathf.Pow (xDis, 2)) * 0.8f;
 				}
 
 				position = t + f * (distance + addDistance);

@@ -145,7 +145,7 @@ Transform:
   m_Children:
   - {fileID: 2011274684}
   m_Father: {fileID: 729974165}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &8565875
 CapsuleCollider:
@@ -230,8 +230,7 @@ MonoBehaviour:
 --- !u!114 &8565878
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11452580, guid: 03b523bae09d149aba68d858cfc17558,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8565873}
   m_Enabled: 1
@@ -4681,7 +4680,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 1.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1589659640}
   - {fileID: 8565874}
   - {fileID: 1615085452}
   - {fileID: 1627494821}
@@ -4807,7 +4805,7 @@ Transform:
   m_PrefabParentObject: {fileID: 466564, guid: 03b523bae09d149aba68d858cfc17558, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749539963}
-  m_LocalRotation: {x: 0.10761322, y: -0.21844831, z: -0.43410334, w: 0.8673258}
+  m_LocalRotation: {x: 0.10761323, y: -0.21844831, z: -0.43410337, w: 0.8673258}
   m_LocalPosition: {x: -0.09051102, y: -0.0026820372, z: -0.04543991}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
   m_Children:
@@ -7276,8 +7274,68 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
         type: 2}
+      propertyPath: _userData.players.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.joystickLayouts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardLayouts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultMouseMaps.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._defaultMouseMaps.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultJoystickMaps.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultKeyboardMaps.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._defaultKeyboardMaps.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
       propertyPath: _userData.joystickMaps.Array.data[0].actionElementMaps.Array.size
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[0]._startingCustomControllers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._startingCustomControllers.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4812958570637246, guid: 104694f41f4ba5b4787ac21c6bfd36da, type: 2}
       propertyPath: m_LocalPosition.x
@@ -7325,6 +7383,321 @@ Prefab:
         type: 2}
       propertyPath: _userData.joystickMaps.Array.data[0].actionElementMaps.Array.data[9]._elementIdentifierId
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[0]._startingCustomControllers.Array.data[0]._sourceId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._name
+      value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._descriptiveName
+      value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._startPlaying
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._assignKeyboardOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.playerIdCounter
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultJoystickMaps.Array.data[0]._enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultKeyboardMaps.Array.data[0]._enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultMouseMaps.Array.data[0]._enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.joystickLayouts.Array.data[1]._name
+      value: Layout0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.joystickLayouts.Array.data[1]._descriptiveName
+      value: Layout0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.joystickLayouts.Array.data[1]._id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.joystickLayoutIdCounter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._defaultKeyboardMaps.Array.data[0]._enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._defaultMouseMaps.Array.data[0]._enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._assignMouseOnStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._startingCustomControllers.Array.data[0]._sourceId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardLayouts.Array.data[1]._name
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardLayouts.Array.data[1]._descriptiveName
+      value: Layout0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardLayouts.Array.data[1]._id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardLayoutIdCounter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].layoutId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMapIdCounter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[0]._actionId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[0]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[0]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[0]._keyboardKeyCode
+      value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[1]._actionId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[1]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[1]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[1]._keyboardKeyCode
+      value: 275
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[2]._actionId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[2]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[2]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[2]._keyboardKeyCode
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[3]._actionId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[3]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[3]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[3]._keyboardKeyCode
+      value: 274
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[0]._axisContribution
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[3]._axisContribution
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[4]._actionId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[4]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[4]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[4]._keyboardKeyCode
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[5]._actionId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[5]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[5]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[5]._keyboardKeyCode
+      value: 305
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[6]._actionId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[6]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[6]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[6]._keyboardKeyCode
+      value: 277
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[7]._actionId
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[7]._elementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[7]._elementIdentifierId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.keyboardMaps.Array.data[1].actionElementMaps.Array.data[7]._keyboardKeyCode
+      value: 279
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[2]._defaultKeyboardMaps.Array.data[0]._layoutId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._assignMouseOnStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._assignKeyboardOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747513208097474, guid: 104694f41f4ba5b4787ac21c6bfd36da,
+        type: 2}
+      propertyPath: _userData.players.Array.data[1]._defaultKeyboardMaps.Array.data[0]._layoutId
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 104694f41f4ba5b4787ac21c6bfd36da, type: 2}
@@ -8889,7 +9262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc555ffe423d44c2f983615b1af3cef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewiredPlayerId: 0
+  rewiredPlayerId: 1
   walkByDefault: 0
   canCrouch: 1
   canJump: 1
@@ -11293,154 +11666,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1589659639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 118392, guid: 03b523bae09d149aba68d858cfc17558, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1589659640}
-  - component: {fileID: 1589659645}
-  - component: {fileID: 1589659644}
-  - component: {fileID: 1589659643}
-  - component: {fileID: 1589659642}
-  - component: {fileID: 1589659641}
-  - component: {fileID: 1589659646}
-  m_Layer: 9
-  m_Name: Character Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1589659640
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 485396, guid: 03b523bae09d149aba68d858cfc17558, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 729974165}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1589659641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11478186, guid: 03b523bae09d149aba68d858cfc17558,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85ef3e8d5c77f405d8ab70a643d6a2f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1026520091}
-  rotationSpace: {fileID: 0}
-  updateMode: 1
-  lockCursor: 0
-  smoothFollow: 1
-  offset: {x: 0.5, y: 0.3, z: 0.5}
-  followSpeed: 5
-  rotationSensitivity: 3.5
-  yMinLimit: -10
-  yMaxLimit: 80
-  rotateAlways: 1
-  rotateOnLeftButton: 0
-  rotateOnRightButton: 0
-  rotateOnMiddleButton: 0
-  distance: 4
-  minDistance: 1.5
-  maxDistance: 10
-  zoomSpeed: 10
-  zoomSensitivity: 1
-  blockingLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  blockingRadius: 1
-  blockingSmoothTime: 0.1
-  blockedOffset: 0.5
---- !u!81 &1589659642
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8177562, guid: 03b523bae09d149aba68d858cfc17558,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_Enabled: 1
---- !u!92 &1589659643
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9282124, guid: 03b523bae09d149aba68d858cfc17558,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_Enabled: 1
---- !u!124 &1589659644
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 12424172, guid: 03b523bae09d149aba68d858cfc17558,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_Enabled: 1
---- !u!20 &1589659645
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2069354, guid: 03b523bae09d149aba68d858cfc17558,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 0.019607844}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!114 &1589659646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589659639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af6f870caecf44ab987816d829e41de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyCode: 323
-  ball: {fileID: 187642, guid: 75704024d899843d9a9f8ac921903dd8, type: 2}
-  spawnOffset: {x: 0, y: 0.4, z: 0}
-  force: {x: 0, y: 0, z: 10}
-  mass: 25
 --- !u!1 &1589689334
 GameObject:
   m_ObjectHideFlags: 0
@@ -11741,7 +11966,7 @@ Transform:
   - {fileID: 578148659}
   - {fileID: 276263228}
   m_Father: {fileID: 729974165}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1615085453
 MonoBehaviour:
@@ -11862,7 +12087,7 @@ Transform:
   - {fileID: 1440190096}
   - {fileID: 2143658027}
   m_Father: {fileID: 729974165}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1627494822
 MonoBehaviour:
