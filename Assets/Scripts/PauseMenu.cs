@@ -13,13 +13,10 @@ public class PauseMenu : MonoBehaviour {
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            Debug.Log("IF");
             if (!pausePanel.activeInHierarchy) {
-                Debug.Log("not active");
                 Pause();
             }
             else {
-                Debug.Log("active again");
                 Play();
             }
         }
