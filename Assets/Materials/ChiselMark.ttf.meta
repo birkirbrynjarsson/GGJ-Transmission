@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2ebd99ae554c35c45827cc67973fd773
-timeCreated: 1517068835
+guid: 64fdf3b550c10a44cb0c152a60a4bcc4
+timeCreated: 1517071404
 licenseType: Free
 TrueTypeFontImporter:
   externalObjects: {}
@@ -10,9 +10,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Eatn Cake
+  fontName: Chisel Mark
   fontNames:
-  - Eatn Cake
+  - Chisel Mark
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
