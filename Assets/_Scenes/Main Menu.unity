@@ -344,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 2d520e974c889674b855ff5a58a7bded, type: 2}
-  m_Color: {r: 0, g: 0.91663283, b: 1, a: 0.959}
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.91663283, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.40439698, b: 0.44117647, a: 0.959}
+  m_Color: {r: 0.047199395, g: 0.65770996, b: 0.71323526, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -620,7 +620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: Exit
 --- !u!222 &937546852
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -897,7 +897,7 @@ Canvas:
   m_GameObject: {fileID: 1733120601}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1388696127}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.40439698, b: 0.44117647, a: 0.959}
+  m_Color: {r: 0.047199395, g: 0.65770996, b: 0.71323526, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -997,7 +997,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: Start
 --- !u!222 &1982038567
 CanvasRenderer:
   m_ObjectHideFlags: 0
