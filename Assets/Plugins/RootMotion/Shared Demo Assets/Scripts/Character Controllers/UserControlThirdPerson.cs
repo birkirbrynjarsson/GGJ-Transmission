@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Rewired;
 
 namespace RootMotion.Demos {
 
@@ -17,6 +18,8 @@ namespace RootMotion.Demos {
 			public int actionIndex;
 		}
 
+		public int rewiredPlayerId = 0;		// The Rewired player Id for this character
+		public static Player player; 		// The Rewired player
 		public bool walkByDefault;        // toggle for walking state
 		public bool canCrouch = true;
 		public bool canJump = true;
@@ -28,15 +31,18 @@ namespace RootMotion.Demos {
 		void Start () {
 			// get the transform of the main camera
 			cam = Camera.main.transform;
+
+			// Get the Rewired Player object for this character
+        	player = ReInput.players.GetPlayer(rewiredPlayerId);
 		}
 
 		protected virtual void Update () {
 			// read inputs
-			state.crouch = canCrouch && Input.GetKey(KeyCode.C);
-			state.jump = canJump && Input.GetButton("Jump");
+			state.crouch = canCrouch && player.GetButton("Crouch");
+			state.jump = canJump && player.GetButton("Jump");
 
-			float h = Input.GetAxisRaw("Horizontal");
-			float v = Input.GetAxisRaw("Vertical");
+			float h = player.GetAxisRaw("Move Horizontal");
+			float v = player.GetAxisRaw("Move Vertical");
 			
 			// calculate move direction
 			Vector3 move = cam.rotation * new Vector3(h, 0f, v).normalized;
@@ -48,7 +54,7 @@ namespace RootMotion.Demos {
 				state.move = move;
 			} else state.move = Vector3.zero;
 
-			bool walkToggle = Input.GetKey(KeyCode.LeftShift);
+			bool walkToggle = player.GetButton("Walk");
 
 			// We select appropriate speed based on whether we're walking by default, and whether the walk/run toggle button is pressed:
 			float walkMultiplier = (walkByDefault ? walkToggle ? 1 : 0.5f : walkToggle ? 0.5f : 1);
