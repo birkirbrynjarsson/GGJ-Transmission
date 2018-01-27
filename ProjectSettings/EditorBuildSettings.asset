@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/Main Menu.unity
+    guid: 17773881a3309794c931d611047c6f0a
+  - enabled: 0
+    path: Assets/_Scenes/Tinna_Sandbox.unity
+    guid: 951cfbbcf1264a842af2308d2025274e
+  - enabled: 1
+    path: Assets/_Scenes/Main.unity
+    guid: d703eddad142ced41bd8186732bab3f5
