@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using RootMotion.Demos;
 
 namespace RootMotion {
 
@@ -112,8 +113,8 @@ namespace RootMotion {
 
 			// delta rotation
 			if (rotate) {
-				x += Input.GetAxis("Mouse X") * rotationSensitivity;
-				y = ClampAngle(y - Input.GetAxis("Mouse Y") * rotationSensitivity, yMinLimit, yMaxLimit);
+				x += UserControlThirdPerson.player.GetAxis("Look Horizontal") * rotationSensitivity;
+				y = ClampAngle(y - UserControlThirdPerson.player.GetAxis("Look Vertical") * rotationSensitivity, yMinLimit, yMaxLimit);
 			}
 
 			// Distance
