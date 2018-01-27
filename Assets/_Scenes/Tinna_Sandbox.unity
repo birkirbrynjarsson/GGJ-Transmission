@@ -268,6 +268,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 19.281, y: 0, z: 0}
+--- !u!1 &582057507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 582057509}
+  - component: {fileID: 582057508}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &582057508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582057507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5226bb4904349fb48885204c0e9cae31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1Score: 0
+  Player2Score: 0
+--- !u!4 &582057509
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582057507}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.2109973, y: 0.88066447, z: 93.625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &672435385
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +321,7 @@ GameObject:
   - component: {fileID: 672435388}
   - component: {fileID: 672435387}
   - component: {fileID: 672435386}
+  - component: {fileID: 672435390}
   m_Layer: 5
   m_Name: Score Canvas
   m_TagString: Untagged
@@ -363,6 +406,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &672435390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672435385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5226bb4904349fb48885204c0e9cae31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1Score: 0
+  Player2Score: 0
 --- !u!1 &790939749
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +707,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1284150162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 582057508}
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1284150162
@@ -762,7 +829,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1354874104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1979953205}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1354874104
@@ -1200,7 +1278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979953202}
   - component: {fileID: 1979953203}
-  - component: {fileID: 1979953204}
+  - component: {fileID: 1979953205}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1234,7 +1312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1Text: {fileID: 1705030866}
   Player2Text: {fileID: 814078515}
---- !u!114 &1979953204
+--- !u!114 &1979953205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1242,11 +1320,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1979953201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5226bb4904349fb48885204c0e9cae31, type: 3}
+  m_Script: {fileID: 11500000, guid: ab01ce55dc6c5b64fade9433ac24bbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1Score: 2
-  Player2Score: 0
+  pausePanel: {fileID: 1470360214}
 --- !u!1 &2049358297
 GameObject:
   m_ObjectHideFlags: 0
