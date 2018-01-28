@@ -12,7 +12,7 @@ public class GearController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		direction = (rotateClockwise) ? 1f : -1f;
-		GetComponent<Rigidbody>().AddTorque(transform.forward * rotationSpeed);
+		
 	}
 
 	// Update is called once per frame
@@ -21,7 +21,7 @@ public class GearController : MonoBehaviour {
 		//transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, targetRotation);
 		
 		//transform.rotation = Quaternion.Euler(-90f, 0f, targetRotation);
-		
+		GetComponent<Rigidbody>().AddTorque(transform.forward * rotationSpeed);
 
 		//
 		//transform.Rotate(Vector3.forward * (rotationSpeed * Time.deltaTime * direction));
