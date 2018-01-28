@@ -37,8 +37,6 @@ namespace RootMotion.Demos {
 		}
 
 		protected virtual void Update () {
-
-			print (player.id);
 			// read inputs
 			state.crouch = canCrouch && player.GetButton("Crouch");
 			state.jump = canJump && player.GetButton("Jump");
