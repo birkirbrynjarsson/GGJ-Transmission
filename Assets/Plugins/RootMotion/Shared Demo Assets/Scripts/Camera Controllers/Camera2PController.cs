@@ -114,6 +114,9 @@ namespace RootMotion {
 			// x += UserControlThirdPerson.player.GetAxis ("Look Horizontal") * rotationSensitivity;
 			y = ClampAngle (cameraRotation, yMinLimit, yMaxLimit);
 
+			target = target.Find ("Bip002 Pelvis").transform;
+			target2 = target.Find ("Pelvis").transform;
+
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);
 		}
