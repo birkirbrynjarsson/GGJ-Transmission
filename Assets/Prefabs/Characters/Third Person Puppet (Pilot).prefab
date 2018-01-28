@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 153079933315440848}
   m_Layer: 9
   m_Name: Pelvis
-  m_TagString: Untagged
+  m_TagString: Pelvis1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -18,8 +18,8 @@ namespace RootMotion {
 			FixedLateUpdate
 		}
 
-		public Transform target; // The target Transform to follow
-		public Transform target2; // If 2 players, then this is the target Transform to use for calculating the midpoint to follow with target
+		Transform target; // The target Transform to follow
+		Transform target2; // If 2 players, then this is the target Transform to use for calculating the midpoint to follow with target
 		public Transform rotationSpace; // If assigned, will use this Transform's rotation as the rotation space instead of the world space. Useful with spherical planets.
 		public UpdateMode updateMode = UpdateMode.LateUpdate; // When to update the camera?
 		public bool lockCursor = true; // If true, the mouse will be locked to screen center and hidden
@@ -114,8 +114,8 @@ namespace RootMotion {
 			// x += UserControlThirdPerson.player.GetAxis ("Look Horizontal") * rotationSensitivity;
 			y = ClampAngle (cameraRotation, yMinLimit, yMaxLimit);
 
-			target = target.Find ("Bip002 Pelvis").transform;
-			target2 = target.Find ("Pelvis").transform;
+			target = GameObject.FindGameObjectWithTag ("Pelvis1").transform;
+			target2 = GameObject.FindGameObjectWithTag ("Pelvis2").transform;
 
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);
