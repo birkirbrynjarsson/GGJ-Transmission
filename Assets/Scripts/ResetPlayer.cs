@@ -18,7 +18,6 @@ public class ResetPlayer : MonoBehaviour {
 		audio.Play ();
 		yield return new WaitForSeconds (audio.clip.length);
 		audio.clip = cheer;
-		audio.Play();
 	}
 
 	void OnTriggerEnter(Collider other) {
