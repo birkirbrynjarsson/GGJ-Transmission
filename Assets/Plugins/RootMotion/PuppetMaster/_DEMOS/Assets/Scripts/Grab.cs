@@ -28,6 +28,9 @@ namespace RootMotion.Demos {
 		private const float massMlp = 5f;
 		private const int solverIterationMlp = 10;
 
+		private float grabTimer = 5f;
+		private float currentGrabTimer = 5f;
+
 		void Start() {
 			r = GetComponent<Rigidbody>();
 			c = GetComponent<Collider>();
@@ -101,8 +104,10 @@ namespace RootMotion.Demos {
 		void Update() {
 			if (!grabbed) return;
 
+			currentGrabTimer -= Time.deltaTime;
+
 			// Releasing the other puppet, restoring the initial state
-			if (userControl.player.GetButtonDown("Grab")) {
+			if (userControl.player.GetButtonDown("Grab") || currentGrabTimer < 0f) {
 				Destroy(joint);
 				r.mass /= massMlp;
 				puppetMaster.solverIterationCount /= solverIterationMlp;
@@ -113,6 +118,7 @@ namespace RootMotion.Demos {
 				otherCollider = null;
 				grabbed = false;
 				nextGrabTime = Time.time + 1f;
+				currentGrabTimer = 5f;
 			}
 		}
 	}

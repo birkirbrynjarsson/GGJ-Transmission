@@ -30,6 +30,7 @@ namespace RootMotion {
 		public float followSpeed = 10f; // Smooth follow speed
 
 		[Header("Rotation")]
+		public float cameraRotation = 15;
 		public float rotationSensitivity = 3.5f; // The sensitivity of rotation
 		public float yMinLimit = -20; // Min vertical angle
 		public float yMaxLimit = 80; // Max vertical angle
@@ -111,7 +112,7 @@ namespace RootMotion {
 
 			// Rotate
 			// x += UserControlThirdPerson.player.GetAxis ("Look Horizontal") * rotationSensitivity;
-			y = ClampAngle (y - (-20) * rotationSensitivity, yMinLimit, yMaxLimit);
+			y = ClampAngle (cameraRotation, yMinLimit, yMaxLimit);
 
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);
