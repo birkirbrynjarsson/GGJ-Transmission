@@ -1,0 +1,5 @@
+Assets:
+
+Audio:
+"Small Crowd Applause", Recorded by Yannick Lemieux
+"Ice Cream", by Leo Rossa
