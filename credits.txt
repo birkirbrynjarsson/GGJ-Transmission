@@ -1,0 +1,10 @@
+Assets:
+
+Audio:
+"Small Crowd Applause", Recorded by Yannick Lemieux
+"Ice Cream", by Leo Rossa
+"Giant", by Ian Sutherland
+
+Fonts:
+"ChiselMark", by Savana Price (https://savanasdesign.com)
+"Peony-Regular", by Sarah Rudkin (http://www.sarahrudkindesign.com/) 
