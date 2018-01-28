@@ -31,4 +31,10 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1;
         pausePanel.SetActive(false);
     }
+
+	public void Restart() {
+		GameManager.gm.Player1Score = 0;
+		GameManager.gm.Player2Score = 0;
+		Play ();
+	}
 }

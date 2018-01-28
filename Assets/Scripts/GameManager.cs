@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour {
     // should be updated in one script and fetched to update UI in the UpdateScore script
     public uint Player1Score;
     public uint Player2Score;
-
-	private CreatePlayground playground;	// use to set up playground
           
     void Awake() {
 		
@@ -26,16 +24,8 @@ public class GameManager : MonoBehaviour {
         }
 
         DontDestroyOnLoad(gameObject);
-
-		playground = GetComponent<CreatePlayground> ();
-
-		// InitPlayground ();
+	
     }
-
-	void InitPlayground() {
-		
-		playground.SetupPlayground ();
-	}
 
     public void LoadMainMenu() {
 		

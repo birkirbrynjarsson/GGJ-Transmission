@@ -23,7 +23,7 @@ public class ResetPlayer : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
-		if (other.gameObject.name == "Pelvis") {
+		if (other.gameObject.name == "Bip001 Pelvis") {
 			Instantiate (player1, new Vector3 (x, y, z), Quaternion.identity);
 			Destroy (other.gameObject.transform.root.gameObject);
 			GameManager.gm.Player2Score += 1;
