@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672683285469942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.23, y: -12.9, z: 18.76}
+  m_LocalPosition: {x: 8.48, y: -16.5, z: 16.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,17 +51,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342e968b99d390747b9d52e9508d522c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxObjects: 20
+  maxObjects: 100
   spawnableObjects:
   - {fileID: 1450927738696050, guid: 21f59e3f35eb0ae40a07849dced4f2ea, type: 2}
   - {fileID: 1727180110016416, guid: 60dbd89b2b2661b47aaf479a047f7eb4, type: 2}
   - {fileID: 1687542283929842, guid: f85ac4232e044e848a5fde528d4a6346, type: 2}
-  minX: 0
-  maxX: 30
-  minZ: 0
-  maxZ: 30
-  spawnHeight: 30
-  destroyHeight: -30
-  spawnTimer: 0.3
+  - {fileID: 1863451981729224, guid: 91cede8f2dbdf3d4c8d50fa834ca34b1, type: 2}
+  - {fileID: 1820163368798150, guid: b040f4e1d5db73f49ab2a39ce2f99475, type: 2}
+  - {fileID: 1687542283929842, guid: 5062aef2a2b38e444a3c600cb33cd11e, type: 2}
+  - {fileID: 1687542283929842, guid: 550bf2cba81f88444a4b941e014c650d, type: 2}
+  - {fileID: 1225956679447574, guid: fc2b124d85ebdc14ba569ae47859cf9e, type: 2}
+  - {fileID: 1398085913965928, guid: 337042301ea10754db1c235f0116e930, type: 2}
+  - {fileID: 1727180110016416, guid: 3577a58a4975bfb4fb19f01a1b6e1e0d, type: 2}
+  - {fileID: 1727180110016416, guid: b65535955cc002f4183b96f439ec6aaf, type: 2}
+  minX: -13
+  maxX: 35
+  minZ: -8
+  maxZ: 35
+  spawnHeight: 20
+  destroyHeight: -20
+  spawnTimer: 0.4
   destroyTimer: 1
   currentTimer: -1
